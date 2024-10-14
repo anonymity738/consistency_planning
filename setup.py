@@ -1,0 +1,31 @@
+from setuptools import setup, find_packages
+
+setup(
+  name = 'diffuser',
+  packages = find_packages(),
+  install_requires=[
+        "blobfile>=1.0.5",
+        "numpy==1.23.5",
+        "torch==2.1.0",
+        "torchvision==0.16.0",
+        "torchaudio==2.1.0",
+        "tqdm",
+        "scipy",
+        "pandas",
+        "Cython==3.0.0a10",
+        "piq==0.7.0",
+        "joblib==0.14.0",
+        "albumentations==0.4.3",
+        "lmdb",
+        "clip @ git+https://github.com/openai/CLIP.git",
+        # "mpi4py",
+        "pillow",
+        "mujoco-py==2.1.2.14",
+        "d4rl @ git+https://github.com/Farama-Foundation/d4rl@f2a05c0d66722499bf8031b094d9af3aea7c372b",
+        "matplotlib==3.3.4",
+        "typed-argument-parser",
+        "gitpython",
+        "scikit-video==1.1.11",
+        "einops",
+    ],
+)
